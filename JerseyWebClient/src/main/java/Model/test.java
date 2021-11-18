@@ -13,7 +13,7 @@ public class test {
 	private static String baseUrl = "http://localhost:8080/JerseyWebservice/rest/sinhvien";
 
 	public static void main(String[] args) {
-		testPost();
+		testListAll();
 
 	}
 

@@ -42,6 +42,7 @@ public class AddSvServlet extends HttpServlet {
 		ObjectMapper mapper = new ObjectMapper();
 		List<SinhVien> listSv = mapper.readValue(jsonListSinhvien, new TypeReference<List<SinhVien>>() {});
 		
+		//gui du lieu len jsp
 		request.setAttribute("listSinhVien", listSv);
 		request.getRequestDispatcher("index.jsp").forward(request, response);
 		
